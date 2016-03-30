@@ -1,0 +1,12 @@
+<h1> Welcome to Super Urinals</h1>
+
+We hope you find exactly what you're looking for in a place to "stay".
+
+<ul>
+  {{#each model as |urinal|}}
+  <li>{{urinal.brand}} {{urinal.location}} {{urinal.image}} {{urinal.description}}</li>
+  {{/each}}
+</ul>
+
+{{#link-to 'about'}}About{{/link-to}}
+{{#link-to 'contact'}}Contact{{/link-to}}
